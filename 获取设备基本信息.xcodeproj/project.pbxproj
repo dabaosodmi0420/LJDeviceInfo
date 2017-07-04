@@ -520,6 +520,7 @@
 				CE9D6CB81E53E2BB009608B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE9D6CB91E53E2BB009608B9 /* Build configuration list for PBXNativeTarget "获取设备基本信息Tests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +529,7 @@
 				CE9D6CBB1E53E2BB009608B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE9D6CBC1E53E2BB009608B9 /* Build configuration list for PBXNativeTarget "获取设备基本信息UITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +538,7 @@
 				CE9D6CBE1E53E2BB009608B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

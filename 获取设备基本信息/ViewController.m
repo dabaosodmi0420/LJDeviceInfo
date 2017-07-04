@@ -19,10 +19,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    NSLog(@"%@",[NSObject lj_fileSizeToString:[NSObject lj_getAvailableMemorySize]]);
-    NSLog(@"%@",[NSObject lj_getSystemVersion]);
-    NSLog(@"%@",[NSObject lj_getDeviceName]);
+    NSLog(@"%@",[NSObject macID]);
     NSLog(@"%@",[NSObject lj_getDeviceUUID]);
+    NSLog(@"%@",[NSObject lj_getDeviceName]);
+    NSLog(@"mac--%@",[NSObject lj_getMacAddress]);
     
 }
 

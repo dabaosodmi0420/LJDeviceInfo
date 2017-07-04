@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 
 @interface NSObject (LJDeviceInfo)
-
++ (NSString *)macID;
 /** 获取app版本号 */
 + (NSString *)lj_getAppVersion;
 

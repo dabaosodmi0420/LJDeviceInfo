@@ -19,7 +19,27 @@
 #import <AdSupport/AdSupport.h>
 #import <CoreTelephony/CTCarrier.h>
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
+#import <SystemConfiguration/CaptiveNetwork.h>
+#import <NetworkExtension/NetworkExtension.h>
 @implementation NSObject (LJDeviceInfo)
+/** 获取mac地址及wifi名称 */
++ (NSString *)macID{
+    NSArray *ifs = CFBridgingRelease(CNCopySupportedInterfaces());
+    id info = nil;
+    for (NSString *ifnam in ifs) {
+        info = (__bridge_transfer id)CNCopyCurrentNetworkInfo((CFStringRef)ifnam);
+        if (info && [info count]) {
+            break;
+        }
+    }
+    NSDictionary *dic = (NSDictionary *)info;
+    NSString *ssid = [[dic objectForKey:@"SSID"] lowercaseString];
+    NSString *bssid = [[dic objectForKey:@"BSSID"] lowercaseString];
+    
+    NSLog(@"%@-%@--%@",dic,ssid,bssid);
+    
+    return bssid;
+}
 
 /** 获取app版本号 */
 + (NSString *)lj_getAppVersion{
