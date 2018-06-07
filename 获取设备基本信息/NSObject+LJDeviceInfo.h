@@ -8,9 +8,36 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "Reachability.h"
+
+
+typedef enum : NSUInteger { //当前网络的状态
+    LJDeviceNetStateTypeUnknow,
+    LJDeviceNetStateTypeNone,
+    LJDeviceNetStateType2G,
+    LJDeviceNetStateType3G,
+    LJDeviceNetStateType4G,
+    LJDeviceNetStateTypeWifi
+} LJDeviceNetStateType;
+
+typedef void(^LJNetChangedBlock)(LJDeviceNetStateType netState);
 
 @interface NSObject (LJDeviceInfo)
-+ (NSString *)macID;
+#pragma mark - 属性
+/** 网络状态改变通知block */
+@property (nonatomic, copy)LJNetChangedBlock  netChangedBlock;
+
+#pragma mark - 跳转到设置
+/** 检查当前网络状态 */
++ (void)lj_checkCurrentNetStatusToSetting;
+
+#pragma mark - 获取设备的基本信息
+/** 当前网络状态类别 */
++ (LJDeviceNetStateType)lj_currentNetStateType;
+/** 监听网络状态的变换 */
+- (void)lj_startNotifiNetStateChanged:(LJNetChangedBlock)netChanged;
+- (void)lj_stopNotifiNetStateChanged;
+
 /** 获取app版本号 */
 + (NSString *)lj_getAppVersion;
 

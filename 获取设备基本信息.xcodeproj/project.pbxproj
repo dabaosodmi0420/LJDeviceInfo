@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE38309F1F13101F00A6B715 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CE38309E1F13101F00A6B715 /* Reachability.m */; };
 		CE9D6C8E1E53E2B8009608B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D6C8D1E53E2B7009608B9 /* main.m */; };
 		CE9D6C911E53E2B8009608B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D6C901E53E2B8009608B9 /* AppDelegate.m */; };
 		CE9D6C941E53E2B9009608B9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D6C931E53E2B9009608B9 /* ViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE38309D1F13101F00A6B715 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		CE38309E1F13101F00A6B715 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		CE9D6C891E53E2B7009608B9 /* 获取设备基本信息.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "获取设备基本信息.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9D6C8D1E53E2B7009608B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE9D6C8F1E53E2B8009608B9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -108,6 +111,8 @@
 				CE9D6C901E53E2B8009608B9 /* AppDelegate.m */,
 				CE9D6C921E53E2B9009608B9 /* ViewController.h */,
 				CE9D6C931E53E2B9009608B9 /* ViewController.m */,
+				CE38309D1F13101F00A6B715 /* Reachability.h */,
+				CE38309E1F13101F00A6B715 /* Reachability.m */,
 				CE9D6CBF1E53E2E7009608B9 /* NSObject+LJDeviceInfo.h */,
 				CE9D6CC01E53E2E7009608B9 /* NSObject+LJDeviceInfo.m */,
 				CE9D6C951E53E2B9009608B9 /* Main.storyboard */,
@@ -285,6 +290,7 @@
 				CE9D6C911E53E2B8009608B9 /* AppDelegate.m in Sources */,
 				CE9D6C8E1E53E2B8009608B9 /* main.m in Sources */,
 				CE9D6CC11E53E2E7009608B9 /* NSObject+LJDeviceInfo.m in Sources */,
+				CE38309F1F13101F00A6B715 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
